@@ -6,7 +6,7 @@ import InsectsList from './InsectsList';
 function App() {
   const [insects, setInsects] = useState([]);
   const [page, setPage] = useState(1);
-  const perPage = 40;
+  const perPage = 10;
 
   useEffect(() => {
     async function fetch() {
@@ -24,7 +24,7 @@ function App() {
       <h2>Current Page {page}</h2>
       <div className='buttons'>
         <button disabled={page <= 1} onClick={() => setPage(page - 1)}>Previous Page</button>
-        <button onClick={() => setPage(page + 1)}>Next Page</button>
+        <button disabled={page >= 8} onClick={() => setPage(page + 1)}>Next Page</button>
       </div>
       <InsectsList insects={insects} />
     </>

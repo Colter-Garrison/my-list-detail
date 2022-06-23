@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  border: 2px solid blue;
+}
+
+.buttons {
+  border: 1px solid magenta;
+}
+
+.insect-object {
+  border: 1px solid black;
+}
+
+.insects {
+  border: 2px solid red;
+}
+
+.insect-detail {
+  border: 1px solid green;
+}
