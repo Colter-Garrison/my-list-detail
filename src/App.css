@@ -48,15 +48,21 @@
   border: 1px solid magenta;
 }
 
-.insect-object {
-  border: 1px solid black;
+.insect {
+  padding: 20px;
+  margin: 20px;
+  background: rgb(144, 200, 191);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.insects {
+.insect-list {
   border: 2px solid red;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .insect-detail {

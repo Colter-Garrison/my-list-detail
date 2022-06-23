@@ -6,7 +6,7 @@ export default function Insect({ id, Name, image }) {
 
   return (
     <Link to={`/insects/${id}`}>
-      <div className='insect-object'>
+      <div className='insect'>
         <h3>{Name}</h3>
         <img src={imageURL} />
       </div>
