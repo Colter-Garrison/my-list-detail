@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     async function fetch() {
       const from = page * perPage - perPage;
-      const to = page * perPage;
+      const to = ((page * perPage) - 1);
       const insectsAC = await getInsects(from, to);
 
       setInsects(insectsAC);
