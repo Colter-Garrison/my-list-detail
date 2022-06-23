@@ -39,6 +39,9 @@
 
 .App {
   border: 2px solid blue;
+  background: url('./acb.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .buttons {
