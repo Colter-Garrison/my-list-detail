@@ -3,7 +3,11 @@ import Insect from './Insect';
 export default function InsectsList({ insects }) {
   return (
     <div className='insects'>
-      This is the InsectList page
+      {
+        insects.map((insect, i) => {
+          return <Insect {...insect} key={insect.Name + i + insect.id}/>;
+        })
+      }
     </div>
   );
 }
