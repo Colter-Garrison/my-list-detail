@@ -54,6 +54,9 @@
 
 .insects {
   border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .insect-detail {

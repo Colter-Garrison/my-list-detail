@@ -4,6 +4,7 @@ import { getSingleInsect } from './services/fetch-utils';
 
 export default function InsectDetail() {
   const [insect, setInsect] = useState({});
+  const [imageUrl, setImageUrl] = useState(null);
   const params = useParams();
 
   useEffect(() => {
@@ -13,6 +14,15 @@ export default function InsectDetail() {
     }
     fetchDetails();
   }, [params.id]);
+
+  useEffect(() => {
+    if (insect.image) {
+      const image = insect.image;
+      const urlI = image.replace('=IMAGE("', '');
+      const finalUrl = urlI.replace('")', '');
+      setImageUrl(finalUrl);
+    }
+  }, [insect]);
 
   function handleInsectClick() {
     window.open('https://animal-crossing.com/');
@@ -24,7 +34,7 @@ export default function InsectDetail() {
       <div className='insect-detail' onClick={handleInsectClick}>
         <div className='insect-data'>
           <p>{insect.Name}</p>
-          <img className='insect-img' src={insect.image} />
+          <img className='insect-img' src={imageUrl} />
           <p>#{insect.number}</p>
           <p>Sell Price: {insect.Sell}</p>
           <p>Where to Find: {insect.Where}</p>
