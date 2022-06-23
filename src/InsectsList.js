@@ -1,6 +1,9 @@
+import Insect from './Insect';
 
-export default function InsectsList() {
+export default function InsectsList({ insects }) {
   return (
-    <div>This is the InsectList page</div>
+    <div className='insects'>
+      This is the InsectList page
+    </div>
   );
 }

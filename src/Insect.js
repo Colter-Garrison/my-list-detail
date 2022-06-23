@@ -1,6 +1,12 @@
+import { Link } from 'react-router-dom';
 
-export default function Insect() {
+export default function Insect({ id, Name, image }) {
   return (
-    <div>This is the Insect page</div>
+    <Link to={`/insects/${id}`}>
+      <div className='insect-object'>
+        <h3>{Name}</h3>
+        <img src={image} />
+      </div>
+    </Link>
   );
 }
