@@ -43,6 +43,9 @@
 }
 body {
   background: url('./acb.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+
 }
 
 .insect {
