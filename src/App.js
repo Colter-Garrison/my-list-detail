@@ -4,6 +4,7 @@ import InsectsPage from './InsectsPage';
 import InsectDetail from './InsectDetail';
 
 export default function App() {
+
   return (
     <Router>
       <div className="App">
