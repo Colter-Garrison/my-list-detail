@@ -36,3 +36,46 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body {
+  background: url('./acb.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+
+}
+
+.insect {
+  padding: 20px;
+  margin: 20px;
+  background: rgba(144, 200, 191, 0.58);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.insect-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.insect-detail {
+  padding: 10px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+p {
+  padding: 3px;
+}
